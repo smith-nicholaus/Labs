@@ -1,0 +1,63 @@
+span.links  {
+  display: inline-block;
+  width: 5%;
+  height: 10%;
+  padding: 5px;
+  border: 1px solid blue; 
+}
+
+a {
+  text-decoration: none;
+}
+
+span.links:hover {
+background-color: white;
+}
+
+.header {
+  text-align: center;
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.nav {
+  grid-area: nav;
+  text-align: center;
+  background-color: lightcoral;
+}
+
+.section {
+  grid-area: section;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+}
+
+.aside {
+  grid-area: aside;
+  text-align: center;
+  background-color: lightgreen;
+}
+
+.article {
+  grid-area: article;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: lightpink;
+}
+
+.wrapper {
+display: grid;
+grid-template-areas: 
+'header header header'
+'nav nav nav'
+'section section aside'
+'article article aside'
+'footer footer footer';
+grid-gap: 10px;
+padding: 10px;
+}
